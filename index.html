@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.33.3/es6-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.20/system-polyfills.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.6/angular2-polyfills.js"></script>
+    <script src="https://code.angularjs.org/tools/system.js"></script>
+    <script src="https://code.angularjs.org/tools/typescript.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.6/Rx.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.6/angular2.dev.js"></script>
+    <script>
+      System.config({
+        transpiler: 'typescript',
+        typescriptOptions: { emitDecoratorMetadata: true },
+        packages: {'app': {defaultExtension: 'ts'}},
+        map: { 'app': './app' }
+      });
+      System.import('app/hello_world_main')
+            .then(null, console.error.bind(console));
+    </script>
+  </head>
+<body>
+   <my-app>Loading...</my-app>
+   <my-app1>Loading...</my-app1>
+   <my-app2>Loading...</my-app2>
+   <my-app3>Loading...</my-app3>
+   <my-app4>Loading...</my-app4>
+   <my-app5>Loading...</my-app5>
+   <my-app6>Loading...</my-app6>
+   <my-app7>Loading...</my-app7>
+   <my-app8>Loading...</my-app8>
+
+   <!-- Form -->
+   <my-app9>Loading...</my-app9>
+
+   <!-- Service -->
+   <my-app10>Loading...</my-app10>
+
+   <!-- Attribute Directive -->
+   <my-app11>Loading...</my-app11>
+   
+</body>
+</html>
